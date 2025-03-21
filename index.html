@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+<div class="todo_app">
+    <div class="title">我的习作</div>
+    <div class="todo_form">
+        <input type="text" class="input">
+        <button class="add">添加</button>
+    </div>
+<div>
+
+<div class="item completed">
+    <input type="checkbox">
+    <span class="name">吃饭</span>
+    <div class="del"></div>
+</div>
+<div class="item">
+    <input type="checkbox">
+    <span class="name">吃饭</span>
+    <div class="del"></div>
+</div>
+<div class="item">
+    <input type="checkbox">
+    <span class="name">吃饭</span>
+    <div class="del"></div>
+</div>
+
+
+</div>
+
+
+
+
+<style>
+  body {
+  background: linear-gradient(to right top, #0000ff, #ff69b4);
+  min-height: 100vh;
+  margin: 0;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.del{
+    width: 8%;
+    height: 30px;
+    border-radius: 6px;
+    border: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.del::after {
+    content: "del";
+    color: #1a050b;
+    font-size: 14px;
+    font-weight: 600;
+}
+.name{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding-left: 20px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width:75%;
+    height:50px;
+    margin: 8px auto;
+    padding:16px;
+    border-radius:20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    gap: 10px;
+}
+.todo_form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 40px;
+   margin-top: 20px;
+}
+.input {
+width: 60%;
+height: 20px;
+border-radius: 10px 0 0 10px;
+padding-left: 10px;
+border: 5px;
+padding: 10px;
+outline: none;
+background: white;
+}
+.add {
+    width: 10%;
+    height: 40px;
+    border-radius: 0 6px 6px 0;
+    background: white;
+    border: 5px;
+    padding: 10px;
+}
+.todo_app {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
